@@ -285,47 +285,47 @@ const API_URL = "https://script.google.com/macros/s/AKfycbyEbzysb8a4WfH7_QatibM1
 // ── RUTINA LOCAL (espejo del Apps Script) ───────────────────────
 const RUTINA = {
   LUN: { nombre: "Pecho · Tríceps", color: "#E94560", ejercicios: [
-    { id: "chest_inclinado", gif: "https://v2.exercisedb.io/image/0025", nombre: "Chest Press Inclinado", musculo: "Pecho Superior · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Set 1 preparación. Set 4 mente-músculo exigente. Controla bajada 2 seg." },
-    { id: "chest_vertical", gif: "https://v2.exercisedb.io/image/0030", nombre: "Chest Press Vertical", musculo: "Pecho Medio · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Misma progresión. Codos a 45° del torso. Escápulas juntas." },
-    { id: "pec_deck", gif: "https://v2.exercisedb.io/image/0053", nombre: "Pec Deck / Cable Fly", musculo: "Pecho · Porción Esternal", sets: 3, reps: "8-12 / 8-12 / 6-8 + drop", tip: "Último set: 6-8 reps, baja peso inmediatamente y ve al fallo." },
-    { id: "dips", gif: "https://v2.exercisedb.io/image/0322", nombre: "Dips en Paralelas", musculo: "Tríceps · Pecho Inferior", sets: 3, reps: "8-10", tip: "Inclínate hacia adelante para mayor activación pectoral." },
-    { id: "shoulder_press", gif: "https://v2.exercisedb.io/image/0526", nombre: "Shoulder Press (Opcional)", musculo: "Deltoides · Tríceps", sets: 3, reps: "8-10", tip: "Solo si tienes energía." },
-    { id: "tricep_pushdown", gif: "https://v2.exercisedb.io/image/0662", nombre: "Tricep Pushdown Rope", musculo: "Tríceps", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Set 3: peso máximo 6 reps, triple dropset al fallo." }
+    { id: "chest_inclinado", gif: "https://workoutxapp.com/demo-gifs/0025.gif", nombre: "Chest Press Inclinado", musculo: "Pecho Superior · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Set 1 preparación. Set 4 mente-músculo exigente. Controla bajada 2 seg." },
+    { id: "chest_vertical", gif: "https://workoutxapp.com/demo-gifs/0030.gif", nombre: "Chest Press Vertical", musculo: "Pecho Medio · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Misma progresión. Codos a 45° del torso. Escápulas juntas." },
+    { id: "pec_deck", gif: "https://workoutxapp.com/demo-gifs/0053.gif", nombre: "Pec Deck / Cable Fly", musculo: "Pecho · Porción Esternal", sets: 3, reps: "8-12 / 8-12 / 6-8 + drop", tip: "Último set: 6-8 reps, baja peso inmediatamente y ve al fallo." },
+    { id: "dips", gif: "https://workoutxapp.com/demo-gifs/0322.gif", nombre: "Dips en Paralelas", musculo: "Tríceps · Pecho Inferior", sets: 3, reps: "8-10", tip: "Inclínate hacia adelante para mayor activación pectoral." },
+    { id: "shoulder_press", gif: "https://workoutxapp.com/demo-gifs/0526.gif", nombre: "Shoulder Press (Opcional)", musculo: "Deltoides · Tríceps", sets: 3, reps: "8-10", tip: "Solo si tienes energía." },
+    { id: "tricep_pushdown", gif: "https://workoutxapp.com/demo-gifs/0662.gif", nombre: "Tricep Pushdown Rope", musculo: "Tríceps", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Set 3: peso máximo 6 reps, triple dropset al fallo." }
   ]},
   MAR: { nombre: "Espalda · Bíceps · Antebrazo", color: "#3A7BD5", ejercicios: [
-    { id: "dominadas", gif: "https://v2.exercisedb.io/image/0652", nombre: "Dominadas", musculo: "Dorsal · Bíceps · Trapecio", sets: 4, reps: "6-10", tip: "Agarre prono ancho. Lleva el pecho a la barra." },
-    { id: "jalon_pecho", gif: "https://v2.exercisedb.io/image/0290", nombre: "Jalón al Pecho", musculo: "Dorsal · Trapecio Inferior", sets: 3, reps: "10-12", tip: "Agarre ancho. Lleva la barra a la clavícula." },
-    { id: "remo_maquina", gif: "https://v2.exercisedb.io/image/0305", nombre: "Remo Máquina Bilateral/Unilateral", musculo: "Trapecio Medio · Romboides", sets: 4, reps: "8-12 uni / fallo bi", tip: "8-12 unilateral por lado, luego bilateral al fallo." },
-    { id: "remo_gironda", gif: "https://v2.exercisedb.io/image/0307", nombre: "Remo Gironda Agarre Cerrado", musculo: "Romboides · Trapecio Medio", sets: 3, reps: "10-12", tip: "Codos pegados. Manos al ombligo." },
-    { id: "reverse_pec_deck", gif: "https://v2.exercisedb.io/image/0297", nombre: "Reverse Pec Deck", musculo: "Deltoides Posterior · Romboides", sets: 3, reps: "12-15", tip: "Brazos casi extendidos. Movimiento lento." },
-    { id: "curl_polea", gif: "https://v2.exercisedb.io/image/0440", nombre: "Curl de Bíceps en Polea", musculo: "Bíceps · Braquial", sets: 3, reps: "12-15", tip: "Tensión constante en todo el rango." },
-    { id: "curl_concentrado", gif: "https://v2.exercisedb.io/image/0434", nombre: "Curl Concentrado Mancuerna", musculo: "Bíceps · Braquiorradial", sets: 3, reps: "10-12", tip: "Codo apoyado en muslo. Supina la muñeca al subir." }
+    { id: "dominadas", gif: "https://workoutxapp.com/demo-gifs/0652.gif", nombre: "Dominadas", musculo: "Dorsal · Bíceps · Trapecio", sets: 4, reps: "6-10", tip: "Agarre prono ancho. Lleva el pecho a la barra." },
+    { id: "jalon_pecho", gif: "https://workoutxapp.com/demo-gifs/0290.gif", nombre: "Jalón al Pecho", musculo: "Dorsal · Trapecio Inferior", sets: 3, reps: "10-12", tip: "Agarre ancho. Lleva la barra a la clavícula." },
+    { id: "remo_maquina", gif: "https://workoutxapp.com/demo-gifs/0305.gif", nombre: "Remo Máquina Bilateral/Unilateral", musculo: "Trapecio Medio · Romboides", sets: 4, reps: "8-12 uni / fallo bi", tip: "8-12 unilateral por lado, luego bilateral al fallo." },
+    { id: "remo_gironda", gif: "https://workoutxapp.com/demo-gifs/0307.gif", nombre: "Remo Gironda Agarre Cerrado", musculo: "Romboides · Trapecio Medio", sets: 3, reps: "10-12", tip: "Codos pegados. Manos al ombligo." },
+    { id: "reverse_pec_deck", gif: "https://workoutxapp.com/demo-gifs/0297.gif", nombre: "Reverse Pec Deck", musculo: "Deltoides Posterior · Romboides", sets: 3, reps: "12-15", tip: "Brazos casi extendidos. Movimiento lento." },
+    { id: "curl_polea", gif: "https://workoutxapp.com/demo-gifs/0440.gif", nombre: "Curl de Bíceps en Polea", musculo: "Bíceps · Braquial", sets: 3, reps: "12-15", tip: "Tensión constante en todo el rango." },
+    { id: "curl_concentrado", gif: "https://workoutxapp.com/demo-gifs/0434.gif", nombre: "Curl Concentrado Mancuerna", musculo: "Bíceps · Braquiorradial", sets: 3, reps: "10-12", tip: "Codo apoyado en muslo. Supina la muñeca al subir." }
   ]},
   MIE: { nombre: "Piernas", color: "#16793A", ejercicios: [
-    { id: "peso_muerto", gif: "https://v2.exercisedb.io/image/0032", nombre: "Peso Muerto", musculo: "Glúteo · Femoral · Erectores", sets: 4, reps: "1 cal + 3×6-8", tip: "1 set de calentamiento. Espalda neutra. Empuja el suelo." },
-    { id: "leg_press", gif: "https://v2.exercisedb.io/image/0389", nombre: "Leg Press", musculo: "Cuádriceps · Glúteo", sets: 3, reps: "6-8", tip: "No bloquees rodillas arriba." },
-    { id: "lying_leg_curl", gif: "https://v2.exercisedb.io/image/0395", nombre: "Lying Leg Curl", musculo: "Femoral · Gastrocnemio", sets: 3, reps: "8-10", tip: "No levantes caderas. Aprieta el femoral." },
-    { id: "leg_extension", gif: "https://v2.exercisedb.io/image/0386", nombre: "Leg Extension", musculo: "Cuádriceps", sets: 3, reps: "8-10 + hold 10 seg", tip: "Último set aguanta la contracción 10 seg." },
-    { id: "abduccion", gif: "https://v2.exercisedb.io/image/0335", nombre: "Abducción de Cadera", musculo: "Glúteo Medio · Menor", sets: 2, reps: "8-10", tip: "Foco en glúteo lateral." },
-    { id: "calf_raise", gif: "https://v2.exercisedb.io/image/1349", nombre: "Calf Raise", musculo: "Gastrocnemio · Sóleo", sets: 2, reps: "10 + fallo", tip: "10 reps con pausa 1 seg arriba, luego al fallo." }
+    { id: "peso_muerto", gif: "https://workoutxapp.com/demo-gifs/0032.gif", nombre: "Peso Muerto", musculo: "Glúteo · Femoral · Erectores", sets: 4, reps: "1 cal + 3×6-8", tip: "1 set de calentamiento. Espalda neutra. Empuja el suelo." },
+    { id: "leg_press", gif: "https://workoutxapp.com/demo-gifs/0389.gif", nombre: "Leg Press", musculo: "Cuádriceps · Glúteo", sets: 3, reps: "6-8", tip: "No bloquees rodillas arriba." },
+    { id: "lying_leg_curl", gif: "https://workoutxapp.com/demo-gifs/0395.gif", nombre: "Lying Leg Curl", musculo: "Femoral · Gastrocnemio", sets: 3, reps: "8-10", tip: "No levantes caderas. Aprieta el femoral." },
+    { id: "leg_extension", gif: "https://workoutxapp.com/demo-gifs/0386.gif", nombre: "Leg Extension", musculo: "Cuádriceps", sets: 3, reps: "8-10 + hold 10 seg", tip: "Último set aguanta la contracción 10 seg." },
+    { id: "abduccion", gif: "https://workoutxapp.com/demo-gifs/0335.gif", nombre: "Abducción de Cadera", musculo: "Glúteo Medio · Menor", sets: 2, reps: "8-10", tip: "Foco en glúteo lateral." },
+    { id: "calf_raise", gif: "https://workoutxapp.com/demo-gifs/1349.gif", nombre: "Calf Raise", musculo: "Gastrocnemio · Sóleo", sets: 2, reps: "10 + fallo", tip: "10 reps con pausa 1 seg arriba, luego al fallo." }
   ]},
   JUE: { nombre: "Hombro · Trapecio · Tríceps", color: "#9B59B6", ejercicios: [
-    { id: "press_hombro_mancuerna", gif: "https://v2.exercisedb.io/image/0526", nombre: "Press Hombro Mancuerna", musculo: "Deltoides · Tríceps", sets: 4, reps: "Cal / 12-15 / 8-12 / 6-8", tip: "SUPERSET con encogimiento. Pasa directo sin descanso." },
-    { id: "encogimiento_mancuerna", gif: "https://v2.exercisedb.io/image/0752", nombre: "Encogimiento Mancuerna (Superset 1B)", musculo: "Trapecio Superior", sets: 4, reps: "8-12", tip: "Inmediatamente después del press." },
-    { id: "lateral_mancuerna", gif: "https://v2.exercisedb.io/image/0566", nombre: "Elevación Lateral Mancuerna", musculo: "Deltoides Lateral", sets: 3, reps: "12-15 / 10-12 / 8-10", tip: "SUPERSET con encogimiento barra." },
-    { id: "encogimiento_barra", gif: "https://v2.exercisedb.io/image/0751", nombre: "Encogimiento Barra (Superset 2B)", musculo: "Trapecio Superior y Medio", sets: 3, reps: "8-12", tip: "Inmediatamente después de las laterales." },
-    { id: "elevacion_frontal", gif: "https://v2.exercisedb.io/image/0551", nombre: "Elevación Frontal Mancuerna", musculo: "Deltoides Anterior", sets: 3, reps: "8-10", tip: "No balancees el torso." },
-    { id: "extension_polea_alta", gif: "https://v2.exercisedb.io/image/0679", nombre: "Extensión Tríceps Polea Alta", musculo: "Tríceps · Cabeza Lateral", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Triple dropset en el último set." },
-    { id: "extension_polea_baja", gif: "https://v2.exercisedb.io/image/0704", nombre: "Extensión Tríceps Polea Baja", musculo: "Tríceps · Cabeza Larga", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Mayor estiramiento. Mismo esquema dropset." }
+    { id: "press_hombro_mancuerna", gif: "https://workoutxapp.com/demo-gifs/0526.gif", nombre: "Press Hombro Mancuerna", musculo: "Deltoides · Tríceps", sets: 4, reps: "Cal / 12-15 / 8-12 / 6-8", tip: "SUPERSET con encogimiento. Pasa directo sin descanso." },
+    { id: "encogimiento_mancuerna", gif: "https://workoutxapp.com/demo-gifs/0752.gif", nombre: "Encogimiento Mancuerna (Superset 1B)", musculo: "Trapecio Superior", sets: 4, reps: "8-12", tip: "Inmediatamente después del press." },
+    { id: "lateral_mancuerna", gif: "https://workoutxapp.com/demo-gifs/0566.gif", nombre: "Elevación Lateral Mancuerna", musculo: "Deltoides Lateral", sets: 3, reps: "12-15 / 10-12 / 8-10", tip: "SUPERSET con encogimiento barra." },
+    { id: "encogimiento_barra", gif: "https://workoutxapp.com/demo-gifs/0751.gif", nombre: "Encogimiento Barra (Superset 2B)", musculo: "Trapecio Superior y Medio", sets: 3, reps: "8-12", tip: "Inmediatamente después de las laterales." },
+    { id: "elevacion_frontal", gif: "https://workoutxapp.com/demo-gifs/0551.gif", nombre: "Elevación Frontal Mancuerna", musculo: "Deltoides Anterior", sets: 3, reps: "8-10", tip: "No balancees el torso." },
+    { id: "extension_polea_alta", gif: "https://workoutxapp.com/demo-gifs/0679.gif", nombre: "Extensión Tríceps Polea Alta", musculo: "Tríceps · Cabeza Lateral", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Triple dropset en el último set." },
+    { id: "extension_polea_baja", gif: "https://workoutxapp.com/demo-gifs/0704.gif", nombre: "Extensión Tríceps Polea Baja", musculo: "Tríceps · Cabeza Larga", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Mayor estiramiento. Mismo esquema dropset." }
   ]},
   VIE: { nombre: "Espalda · Bíceps · Antebrazo", color: "#E67E22", ejercicios: [
-    { id: "chin_up", gif: "https://v2.exercisedb.io/image/3294", nombre: "Dominadas Agarre Supino", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "6-8", tip: "Agarre supino. Activa más el dorsal inferior." },
-    { id: "jalon_cerrado", gif: "https://v2.exercisedb.io/image/0288", nombre: "Jalón Agarre Cerrado", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "10-12", tip: "Agarre cerrado supino. Lleva al pecho." },
-    { id: "remo_cable_ancho", gif: "https://v2.exercisedb.io/image/0306", nombre: "Remo Cable Agarre Ancho", musculo: "Trapecio Medio · Romboides", sets: 3, reps: "10-12", tip: "Codos abiertos. Lleva la barra al pecho." },
-    { id: "curl_ez", gif: "https://v2.exercisedb.io/image/0453", nombre: "Curl Barra EZ", musculo: "Bíceps · Braquial", sets: 4, reps: "8-10", tip: "Compuesto. Va primero. No balancees." },
-    { id: "curl_martillo", gif: "https://v2.exercisedb.io/image/0460", nombre: "Curl Martillo Mancuerna", musculo: "Braquiorradial · Braquial", sets: 3, reps: "10-12", tip: "Agarre neutro. Grosor lateral del brazo." },
-    { id: "curl_polea_vie", gif: "https://v2.exercisedb.io/image/0440", nombre: "Curl Bíceps en Polea", musculo: "Bíceps · Tensión Constante", sets: 3, reps: "12-15", tip: "Cierre con bomba. Tensión constante." },
-    { id: "curl_muneca", gif: "https://v2.exercisedb.io/image/0204", nombre: "Curl Muñeca Invertido Barra", musculo: "Extensores Antebrazo", sets: 3, reps: "12-15", tip: "Antebrazo apoyado. Peso moderado." }
+    { id: "chin_up", gif: "https://workoutxapp.com/demo-gifs/3294.gif", nombre: "Dominadas Agarre Supino", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "6-8", tip: "Agarre supino. Activa más el dorsal inferior." },
+    { id: "jalon_cerrado", gif: "https://workoutxapp.com/demo-gifs/0288.gif", nombre: "Jalón Agarre Cerrado", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "10-12", tip: "Agarre cerrado supino. Lleva al pecho." },
+    { id: "remo_cable_ancho", gif: "https://workoutxapp.com/demo-gifs/0306.gif", nombre: "Remo Cable Agarre Ancho", musculo: "Trapecio Medio · Romboides", sets: 3, reps: "10-12", tip: "Codos abiertos. Lleva la barra al pecho." },
+    { id: "curl_ez", gif: "https://workoutxapp.com/demo-gifs/0453.gif", nombre: "Curl Barra EZ", musculo: "Bíceps · Braquial", sets: 4, reps: "8-10", tip: "Compuesto. Va primero. No balancees." },
+    { id: "curl_martillo", gif: "https://workoutxapp.com/demo-gifs/0460.gif", nombre: "Curl Martillo Mancuerna", musculo: "Braquiorradial · Braquial", sets: 3, reps: "10-12", tip: "Agarre neutro. Grosor lateral del brazo." },
+    { id: "curl_polea_vie", gif: "https://workoutxapp.com/demo-gifs/0440.gif", nombre: "Curl Bíceps en Polea", musculo: "Bíceps · Tensión Constante", sets: 3, reps: "12-15", tip: "Cierre con bomba. Tensión constante." },
+    { id: "curl_muneca", gif: "https://workoutxapp.com/demo-gifs/0204.gif", nombre: "Curl Muñeca Invertido Barra", musculo: "Extensores Antebrazo", sets: 3, reps: "12-15", tip: "Antebrazo apoyado. Peso moderado." }
   ]}
 };
 
