@@ -285,47 +285,47 @@ const API_URL = "https://script.google.com/macros/s/AKfycbyEbzysb8a4WfH7_QatibM1
 // ── RUTINA LOCAL (espejo del Apps Script) ───────────────────────
 const RUTINA = {
   LUN: { nombre: "Pecho · Tríceps", color: "#E94560", ejercicios: [
-    { id: "chest_inclinado", gif: "./img/chest_inclinado.jpg", nombre: "Chest Press Inclinado", musculo: "Pecho Superior · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Set 1 preparación. Set 4 mente-músculo exigente. Controla bajada 2 seg." },
-    { id: "chest_vertical", gif: "./img/chest_vertical.jpg", nombre: "Chest Press Vertical", musculo: "Pecho Medio · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Misma progresión. Codos a 45° del torso. Escápulas juntas." },
-    { id: "pec_deck", gif: "./img/pec_deck.jpg", nombre: "Pec Deck / Cable Fly", musculo: "Pecho · Porción Esternal", sets: 3, reps: "8-12 / 8-12 / 6-8 + drop", tip: "Último set: 6-8 reps, baja peso inmediatamente y ve al fallo." },
-    { id: "dips", gif: "./img/dips.jpg", nombre: "Dips en Paralelas", musculo: "Tríceps · Pecho Inferior", sets: 3, reps: "8-10", tip: "Inclínate hacia adelante para mayor activación pectoral." },
-    { id: "shoulder_press", gif: "./img/shoulder_press.jpg", nombre: "Shoulder Press (Opcional)", musculo: "Deltoides · Tríceps", sets: 3, reps: "8-10", tip: "Solo si tienes energía." },
-    { id: "tricep_pushdown", gif: "./img/tricep_pushdown.jpg", nombre: "Tricep Pushdown Rope", musculo: "Tríceps", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Set 3: peso máximo 6 reps, triple dropset al fallo." }
+    { id: "chest_inclinado", gif: "./chest_inclinado.jpg", nombre: "Chest Press Inclinado", musculo: "Pecho Superior · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Set 1 preparación. Set 4 mente-músculo exigente. Controla bajada 2 seg." },
+    { id: "chest_vertical", gif: "./chest_vertical.jpg", nombre: "Chest Press Vertical", musculo: "Pecho Medio · Tríceps", sets: 4, reps: "Prep / 8 / 5 / 15", tip: "Misma progresión. Codos a 45° del torso. Escápulas juntas." },
+    { id: "pec_deck", gif: "./pec_deck.jpg", nombre: "Pec Deck / Cable Fly", musculo: "Pecho · Porción Esternal", sets: 3, reps: "8-12 / 8-12 / 6-8 + drop", tip: "Último set: 6-8 reps, baja peso inmediatamente y ve al fallo." },
+    { id: "dips", gif: "./dips.jpg", nombre: "Dips en Paralelas", musculo: "Tríceps · Pecho Inferior", sets: 3, reps: "8-10", tip: "Inclínate hacia adelante para mayor activación pectoral." },
+    { id: "shoulder_press", gif: "./shoulder_press.jpg", nombre: "Shoulder Press (Opcional)", musculo: "Deltoides · Tríceps", sets: 3, reps: "8-10", tip: "Solo si tienes energía." },
+    { id: "tricep_pushdown", gif: "./tricep_pushdown.jpg", nombre: "Tricep Pushdown Rope", musculo: "Tríceps", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Set 3: peso máximo 6 reps, triple dropset al fallo." }
   ]},
   MAR: { nombre: "Espalda · Bíceps · Antebrazo", color: "#3A7BD5", ejercicios: [
-    { id: "dominadas", gif: "./img/dominadas.jpg", nombre: "Dominadas", musculo: "Dorsal · Bíceps · Trapecio", sets: 4, reps: "6-10", tip: "Agarre prono ancho. Lleva el pecho a la barra." },
-    { id: "jalon_pecho", gif: "./img/jalon_pecho.jpg", nombre: "Jalón al Pecho", musculo: "Dorsal · Trapecio Inferior", sets: 3, reps: "10-12", tip: "Agarre ancho. Lleva la barra a la clavícula." },
-    { id: "remo_maquina", gif: "./img/remo_maquina.jpg", nombre: "Remo Máquina Bilateral/Unilateral", musculo: "Trapecio Medio · Romboides", sets: 4, reps: "8-12 uni / fallo bi", tip: "8-12 unilateral por lado, luego bilateral al fallo." },
-    { id: "remo_gironda", gif: "./img/remo_gironda.jpg", nombre: "Remo Gironda Agarre Cerrado", musculo: "Romboides · Trapecio Medio", sets: 3, reps: "10-12", tip: "Codos pegados. Manos al ombligo." },
-    { id: "reverse_pec_deck", gif: "./img/reverse_pec_deck.jpg", nombre: "Reverse Pec Deck", musculo: "Deltoides Posterior · Romboides", sets: 3, reps: "12-15", tip: "Brazos casi extendidos. Movimiento lento." },
-    { id: "curl_polea", gif: "./img/curl_polea.jpg", nombre: "Curl de Bíceps en Polea", musculo: "Bíceps · Braquial", sets: 3, reps: "12-15", tip: "Tensión constante en todo el rango." },
-    { id: "curl_concentrado", gif: "./img/curl_concentrado.jpg", nombre: "Curl Concentrado Mancuerna", musculo: "Bíceps · Braquiorradial", sets: 3, reps: "10-12", tip: "Codo apoyado en muslo. Supina la muñeca al subir." }
+    { id: "dominadas", gif: "./dominadas.jpg", nombre: "Dominadas", musculo: "Dorsal · Bíceps · Trapecio", sets: 4, reps: "6-10", tip: "Agarre prono ancho. Lleva el pecho a la barra." },
+    { id: "jalon_pecho", gif: "./jalon_pecho.jpg", nombre: "Jalón al Pecho", musculo: "Dorsal · Trapecio Inferior", sets: 3, reps: "10-12", tip: "Agarre ancho. Lleva la barra a la clavícula." },
+    { id: "remo_maquina", gif: "./remo_maquina.jpg", nombre: "Remo Máquina Bilateral/Unilateral", musculo: "Trapecio Medio · Romboides", sets: 4, reps: "8-12 uni / fallo bi", tip: "8-12 unilateral por lado, luego bilateral al fallo." },
+    { id: "remo_gironda", gif: "./remo_gironda.jpg", nombre: "Remo Gironda Agarre Cerrado", musculo: "Romboides · Trapecio Medio", sets: 3, reps: "10-12", tip: "Codos pegados. Manos al ombligo." },
+    { id: "reverse_pec_deck", gif: "./reverse_pec_deck.jpg", nombre: "Reverse Pec Deck", musculo: "Deltoides Posterior · Romboides", sets: 3, reps: "12-15", tip: "Brazos casi extendidos. Movimiento lento." },
+    { id: "curl_polea", gif: "./curl_polea.jpg", nombre: "Curl de Bíceps en Polea", musculo: "Bíceps · Braquial", sets: 3, reps: "12-15", tip: "Tensión constante en todo el rango." },
+    { id: "curl_concentrado", gif: "./curl_concentrado.jpg", nombre: "Curl Concentrado Mancuerna", musculo: "Bíceps · Braquiorradial", sets: 3, reps: "10-12", tip: "Codo apoyado en muslo. Supina la muñeca al subir." }
   ]},
   MIE: { nombre: "Piernas", color: "#16793A", ejercicios: [
-    { id: "peso_muerto", gif: "./img/peso_muerto.jpg", nombre: "Peso Muerto", musculo: "Glúteo · Femoral · Erectores", sets: 4, reps: "1 cal + 3×6-8", tip: "1 set de calentamiento. Espalda neutra. Empuja el suelo." },
-    { id: "leg_press", gif: "./img/leg_press.jpg", nombre: "Leg Press", musculo: "Cuádriceps · Glúteo", sets: 3, reps: "6-8", tip: "No bloquees rodillas arriba." },
-    { id: "lying_leg_curl", gif: "./img/lying_leg_curl.jpg", nombre: "Lying Leg Curl", musculo: "Femoral · Gastrocnemio", sets: 3, reps: "8-10", tip: "No levantes caderas. Aprieta el femoral." },
-    { id: "leg_extension", gif: "./img/leg_extension.jpg", nombre: "Leg Extension", musculo: "Cuádriceps", sets: 3, reps: "8-10 + hold 10 seg", tip: "Último set aguanta la contracción 10 seg." },
-    { id: "abduccion", gif: "./img/abduccion.jpg", nombre: "Abducción de Cadera", musculo: "Glúteo Medio · Menor", sets: 2, reps: "8-10", tip: "Foco en glúteo lateral." },
-    { id: "calf_raise", gif: "./img/calf_raise.jpg", nombre: "Calf Raise", musculo: "Gastrocnemio · Sóleo", sets: 2, reps: "10 + fallo", tip: "10 reps con pausa 1 seg arriba, luego al fallo." }
+    { id: "peso_muerto", gif: "./peso_muerto.jpg", nombre: "Peso Muerto", musculo: "Glúteo · Femoral · Erectores", sets: 4, reps: "1 cal + 3×6-8", tip: "1 set de calentamiento. Espalda neutra. Empuja el suelo." },
+    { id: "leg_press", gif: "./leg_press.jpg", nombre: "Leg Press", musculo: "Cuádriceps · Glúteo", sets: 3, reps: "6-8", tip: "No bloquees rodillas arriba." },
+    { id: "lying_leg_curl", gif: "./lying_leg_curl.jpg", nombre: "Lying Leg Curl", musculo: "Femoral · Gastrocnemio", sets: 3, reps: "8-10", tip: "No levantes caderas. Aprieta el femoral." },
+    { id: "leg_extension", gif: "./leg_extension.jpg", nombre: "Leg Extension", musculo: "Cuádriceps", sets: 3, reps: "8-10 + hold 10 seg", tip: "Último set aguanta la contracción 10 seg." },
+    { id: "abduccion", gif: "./abduccion.jpg", nombre: "Abducción de Cadera", musculo: "Glúteo Medio · Menor", sets: 2, reps: "8-10", tip: "Foco en glúteo lateral." },
+    { id: "calf_raise", gif: "./calf_raise.jpg", nombre: "Calf Raise", musculo: "Gastrocnemio · Sóleo", sets: 2, reps: "10 + fallo", tip: "10 reps con pausa 1 seg arriba, luego al fallo." }
   ]},
   JUE: { nombre: "Hombro · Trapecio · Tríceps", color: "#9B59B6", ejercicios: [
-    { id: "press_hombro_mancuerna", gif: "./img/press_hombro_mancuerna.jpg", nombre: "Press Hombro Mancuerna", musculo: "Deltoides · Tríceps", sets: 4, reps: "Cal / 12-15 / 8-12 / 6-8", tip: "SUPERSET con encogimiento. Pasa directo sin descanso." },
-    { id: "encogimiento_mancuerna", gif: "./img/encogimiento_mancuerna.jpg", nombre: "Encogimiento Mancuerna (Superset 1B)", musculo: "Trapecio Superior", sets: 4, reps: "8-12", tip: "Inmediatamente después del press." },
-    { id: "lateral_mancuerna", gif: "./img/lateral_mancuerna.jpg", nombre: "Elevación Lateral Mancuerna", musculo: "Deltoides Lateral", sets: 3, reps: "12-15 / 10-12 / 8-10", tip: "SUPERSET con encogimiento barra." },
-    { id: "encogimiento_barra", gif: "./img/encogimiento_barra.jpg", nombre: "Encogimiento Barra (Superset 2B)", musculo: "Trapecio Superior y Medio", sets: 3, reps: "8-12", tip: "Inmediatamente después de las laterales." },
-    { id: "elevacion_frontal", gif: "./img/elevacion_frontal.jpg", nombre: "Elevación Frontal Mancuerna", musculo: "Deltoides Anterior", sets: 3, reps: "8-10", tip: "No balancees el torso." },
-    { id: "extension_polea_alta", gif: "./img/extension_polea_alta.jpg", nombre: "Extensión Tríceps Polea Alta", musculo: "Tríceps · Cabeza Lateral", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Triple dropset en el último set." },
-    { id: "extension_polea_baja", gif: "./img/extension_polea_baja.jpg", nombre: "Extensión Tríceps Polea Baja", musculo: "Tríceps · Cabeza Larga", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Mayor estiramiento. Mismo esquema dropset." }
+    { id: "press_hombro_mancuerna", gif: "./press_hombro_mancuerna.jpg", nombre: "Press Hombro Mancuerna", musculo: "Deltoides · Tríceps", sets: 4, reps: "Cal / 12-15 / 8-12 / 6-8", tip: "SUPERSET con encogimiento. Pasa directo sin descanso." },
+    { id: "encogimiento_mancuerna", gif: "./encogimiento_mancuerna.jpg", nombre: "Encogimiento Mancuerna (Superset 1B)", musculo: "Trapecio Superior", sets: 4, reps: "8-12", tip: "Inmediatamente después del press." },
+    { id: "lateral_mancuerna", gif: "./lateral_mancuerna.jpg", nombre: "Elevación Lateral Mancuerna", musculo: "Deltoides Lateral", sets: 3, reps: "12-15 / 10-12 / 8-10", tip: "SUPERSET con encogimiento barra." },
+    { id: "encogimiento_barra", gif: "./encogimiento_barra.jpg", nombre: "Encogimiento Barra (Superset 2B)", musculo: "Trapecio Superior y Medio", sets: 3, reps: "8-12", tip: "Inmediatamente después de las laterales." },
+    { id: "elevacion_frontal", gif: "./elevacion_frontal.jpg", nombre: "Elevación Frontal Mancuerna", musculo: "Deltoides Anterior", sets: 3, reps: "8-10", tip: "No balancees el torso." },
+    { id: "extension_polea_alta", gif: "./extension_polea_alta.jpg", nombre: "Extensión Tríceps Polea Alta", musculo: "Tríceps · Cabeza Lateral", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Triple dropset en el último set." },
+    { id: "extension_polea_baja", gif: "./extension_polea_baja.jpg", nombre: "Extensión Tríceps Polea Baja", musculo: "Tríceps · Cabeza Larga", sets: 3, reps: "8-12 / 8-10 / 6 + triple drop", tip: "Mayor estiramiento. Mismo esquema dropset." }
   ]},
   VIE: { nombre: "Espalda · Bíceps · Antebrazo", color: "#E67E22", ejercicios: [
-    { id: "chin_up", gif: "./img/chin_up.jpg", nombre: "Dominadas Agarre Supino", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "6-8", tip: "Agarre supino. Activa más el dorsal inferior." },
-    { id: "jalon_cerrado", gif: "./img/jalon_cerrado.jpg", nombre: "Jalón Agarre Cerrado", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "10-12", tip: "Agarre cerrado supino. Lleva al pecho." },
-    { id: "remo_cable_ancho", gif: "./img/remo_cable_ancho.jpg", nombre: "Remo Cable Agarre Ancho", musculo: "Trapecio Medio · Romboides", sets: 3, reps: "10-12", tip: "Codos abiertos. Lleva la barra al pecho." },
-    { id: "curl_ez", gif: "./img/curl_ez.jpg", nombre: "Curl Barra EZ", musculo: "Bíceps · Braquial", sets: 4, reps: "8-10", tip: "Compuesto. Va primero. No balancees." },
-    { id: "curl_martillo", gif: "./img/curl_martillo.jpg", nombre: "Curl Martillo Mancuerna", musculo: "Braquiorradial · Braquial", sets: 3, reps: "10-12", tip: "Agarre neutro. Grosor lateral del brazo." },
-    { id: "curl_polea_vie", gif: "./img/curl_polea_vie.jpg", nombre: "Curl Bíceps en Polea", musculo: "Bíceps · Tensión Constante", sets: 3, reps: "12-15", tip: "Cierre con bomba. Tensión constante." },
-    { id: "curl_muneca", gif: "./img/curl_muneca.jpg", nombre: "Curl Muñeca Invertido Barra", musculo: "Extensores Antebrazo", sets: 3, reps: "12-15", tip: "Antebrazo apoyado. Peso moderado." }
+    { id: "chin_up", gif: "./chin_up.jpg", nombre: "Dominadas Agarre Supino", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "6-8", tip: "Agarre supino. Activa más el dorsal inferior." },
+    { id: "jalon_cerrado", gif: "./jalon_cerrado.jpg", nombre: "Jalón Agarre Cerrado", musculo: "Dorsal Inferior · Bíceps", sets: 3, reps: "10-12", tip: "Agarre cerrado supino. Lleva al pecho." },
+    { id: "remo_cable_ancho", gif: "./remo_cable_ancho.jpg", nombre: "Remo Cable Agarre Ancho", musculo: "Trapecio Medio · Romboides", sets: 3, reps: "10-12", tip: "Codos abiertos. Lleva la barra al pecho." },
+    { id: "curl_ez", gif: "./curl_ez.jpg", nombre: "Curl Barra EZ", musculo: "Bíceps · Braquial", sets: 4, reps: "8-10", tip: "Compuesto. Va primero. No balancees." },
+    { id: "curl_martillo", gif: "./curl_martillo.jpg", nombre: "Curl Martillo Mancuerna", musculo: "Braquiorradial · Braquial", sets: 3, reps: "10-12", tip: "Agarre neutro. Grosor lateral del brazo." },
+    { id: "curl_polea_vie", gif: "./curl_polea_vie.jpg", nombre: "Curl Bíceps en Polea", musculo: "Bíceps · Tensión Constante", sets: 3, reps: "12-15", tip: "Cierre con bomba. Tensión constante." },
+    { id: "curl_muneca", gif: "./curl_muneca.jpg", nombre: "Curl Muñeca Invertido Barra", musculo: "Extensores Antebrazo", sets: 3, reps: "12-15", tip: "Antebrazo apoyado. Peso moderado." }
   ]}
 };
 
