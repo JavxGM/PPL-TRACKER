@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename="/PPL-TRACKER">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage user={user} />} />
         <Route path="/workout" element={<WorkoutPage user={user} />} />

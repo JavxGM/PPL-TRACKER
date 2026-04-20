@@ -4,7 +4,6 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/PPL-TRACKER/',
   plugins: [
     react(),
     VitePWA({
@@ -18,8 +17,8 @@ export default defineConfig({
         background_color: '#1A1A2E',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/PPL-TRACKER/',
-        start_url: '/PPL-TRACKER/',
+        scope: '/',
+        start_url: '/',
         icons: [
           {
             src: 'pwa-192.svg',
