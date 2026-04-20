@@ -86,7 +86,14 @@ export function ExerciseCard({ ejercicio, accentColor, sets, onChange }: Props) 
           </button>
           <div className="exercise-card__info">
             <h3>{ejercicio.nombre}</h3>
-            <span className="text-muted text-sm">{sets.length} {sets.length === 1 ? 'set' : 'sets'}</span>
+            <div className="exercise-card__meta">
+              {ejercicio.repsObjetivo && (
+                <span className="exercise-card__reps" style={{ color: accentColor }}>
+                  {ejercicio.repsObjetivo}
+                </span>
+              )}
+              <span className="text-muted text-sm">{sets.length} {sets.length === 1 ? 'set' : 'sets'}</span>
+            </div>
           </div>
         </div>
 
